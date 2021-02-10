@@ -64,7 +64,7 @@ function nextRound() { //when nextRound is clicked
   //reset x and y
   x = Math.floor((Math.random() * 7) + 1);
   y = Math.floor((Math.random() * 7) + 1);
-  document.querySelector(".grid").style.display = "none"; //hide hint display
+  document.querySelector(".hint").style.display = "none"; //hide hint display
   generateProblem(); //create a new equation
 }
 
@@ -73,7 +73,7 @@ function showHint() {
   Hides the Hint button
   and grabs the right images from the hints array
   And displays them with the bigger number (nums[1]) first*/
-  document.querySelector(".grid").style.display = "block";
+  document.querySelector(".hint").style.display = "block";
   document.getElementById("hint").style.display = "none";
   document.getElementById("x").src = hints[nums[1] - 1];
   document.getElementById("op").src = op.img;
