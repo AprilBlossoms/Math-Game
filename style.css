@@ -15,7 +15,7 @@ body {
    font-family: "Yusei Magic"
  }
 
-/*start button styling*/
+/*start button*/
 .start {
   background-color: inherit;
   position: fixed;
@@ -35,7 +35,6 @@ body {
  }
 
 /*game styling*/
-
 .game {
   text-align: center;
 }
@@ -45,9 +44,8 @@ body {
   margin: 0;
 }
 
-/*hint styling*/
-.grid {
-  background-color: gray;
+/*hint image display*/
+.hint {
   width: 75%;
   margin: auto;
 }

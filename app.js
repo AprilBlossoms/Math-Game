@@ -12,7 +12,6 @@ function difference(a, b) {
   return (b - a)
 }
 
-
 const hints = ["images/one.png", "images/two.png", "images/three.png", "images/four.png", "images/five.png", "images/six.png", "images/seven.png", "images/eight.png", "images/nine.png", "images/ten.png"]
 const plus = {string:"+", img:"images/plus.png"}
 const minus = {string:"-", img:"images/minus.png"}
