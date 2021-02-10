@@ -1,0 +1,53 @@
+#nextRound {
+  display: none;
+}
+#op {
+  margin-bottom: 100px;
+}
+
+/*overall font and background color*/
+body {
+  font-family: "Yusei Magic";
+  font-size: 50px;
+  background-color: snow;
+}
+ button {
+   font-family: "Yusei Magic"
+ }
+
+/*start button styling*/
+.start {
+  background-color: inherit;
+  position: fixed;
+  z-index: 2;
+  height: 100vh;
+  width: 100%;
+}
+.start-button {
+  margin: 0;
+  position: absolute;
+  left: 40%;
+  top: 40%;
+}
+ .start button {
+   font-size: 50px;
+   border-radius: 30%;
+ }
+
+/*game styling*/
+
+.game {
+  text-align: center;
+}
+
+.equation {
+  padding: 0;
+  margin: 0;
+}
+
+/*hint styling*/
+.grid {
+  background-color: gray;
+  width: 75%;
+  margin: auto;
+}

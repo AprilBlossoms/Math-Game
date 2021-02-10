@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Math Game</title>
+  <link rel="stylesheet" href="style.css">
+  </link>
+  <script src="app.js" charset="utf-8"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="start">
+    <div class="start-button">
+      <button id="start" type="button" onclick="start()">Start Game!</button>
+      </div>
+    </div>
+
+  <div class="game">
+
+  <div class="equation">
+    <p class="equation" id="equation"></p>
+    <input type="text" id="answer" name="answer"><br>
+    <button id="enter" type="button" onClick="calculate()">Enter</button>
+    <button id="nextRound" type="button" onClick="nextRound()">Again</button>
+  </div>
+
+  <div class="result">
+    <p id="result"></p>
+    <button id="hint" type="button" onClick="showHint()">Need Help?</button>
+  </div>
+
+  <div class="grid">
+      <img id="x" src="">
+      <img id="op" src="">
+      <img id="y" src="">
+    </div>
+
+  </div>
+
+</body>
