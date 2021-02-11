@@ -8,6 +8,10 @@
   display: none;
 }
 
+#answer {
+  autofocus: true
+}
+
 /*overall font and background color*/
 body {
   font-family: "Yusei Magic";

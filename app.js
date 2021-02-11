@@ -27,6 +27,7 @@ function start() {
   playerName = document.getElementsByName("playerName")[0].value;
   document.querySelector(".fullPage").style.display = "none";
   generateProblem();
+  document.getElementById("answer").select();
 }
 
 
@@ -70,6 +71,8 @@ function calculate() { //when Enter is clicked
   if (answer == correctAns) {
     nextRound();
   }
+
+  document.getElementById("answer").select();
 }
 
 function nextRound() {
