@@ -97,6 +97,7 @@ function newGame() {
 document.getElementById("rocket").style.left=`${distance}px`
   document.getElementById("startPage").style.display = "block";
   document.getElementById("success").style.display = "none";
+  document.getElementById('playerName').value = ''
   nextRound();
 
 }
