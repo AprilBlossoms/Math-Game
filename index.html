@@ -36,9 +36,13 @@
     </div>
 
   <div class="game">
+    <form class="answerForm" onsubmit="calculate();return false">
     <p class="equation" id="equation"></p>
       <input type="text" id="answer" name="answer"><br>
-      <button id="enter" type="button" onClick="calculate()">Enter</button>
+      <input type="submit" name="enter" id="enter" value="Enter">
+
+<!--   <button id="enter" type="button" onClick="calculate()">Enter</button>-->
+    </form>
       <button id="nextRound" type="button" onClick="nextRound()">Again</button>
       <button id="hint" type="button" onClick="showHint()">Need Help?</button>
 

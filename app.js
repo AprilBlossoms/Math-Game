@@ -52,17 +52,17 @@ function calculate() { //when Enter is clicked
   if (answer == correctAns) {
     document.getElementById("result").innerHTML = correctResult[Math.floor(Math.random()*correctResult.length)];
     document.querySelector(".hint").style.display = "none";
-    distance += 85;
+    distance += 9;
   }
   else {
     document.getElementById("result").innerHTML = wrongResult[Math.floor(Math.random()*wrongResult.length)];
     if(distance > 0){
-    distance -= 85;
+    distance -= 9;
   }
   }
-  document.getElementById("rocket").style.left=`${distance}px`
+  document.getElementById("rocket").style.left=`${distance}%`
 
-  if (distance == 850) {
+  if (distance == 90) {
   document.getElementById("success").style.display="block";
   document.getElementById("name").innerHTML="Congratulations "+ playerName
   }
