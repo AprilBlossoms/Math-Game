@@ -13,15 +13,14 @@
 <body>
   <div id="startPage" class="fullPage">
     <div class="start-button">
-      What is your name?<br>
+      <p>What is your name?</p><br>
       <input type="text" id="playerName" name="playerName" autofocus><br>
       <button id="start" type="button" onclick="start()">Start</button>
       </div>
     </div>
 
     <div id="success" class="fullPage">
-      <p id="name"></p>
-      <p>You Win! :)</p>
+      <p id="name">You Win! :D</p><br>
       <button id="newGame" type="button" onClick="newGame()">New Game</button>
     </div>
 
@@ -37,14 +36,11 @@
 
   <div class="game">
     <form class="answerForm" onsubmit="calculate();return false">
-    <p class="equation" id="equation"></p>
+      <p class="equation" id="equation"></p>
       <input type="text" id="answer" name="answer"><br>
       <input type="submit" name="enter" id="enter" value="Enter">
-
-<!--   <button id="enter" type="button" onClick="calculate()">Enter</button>-->
-    </form>
-      <button id="nextRound" type="button" onClick="nextRound()">Again</button>
       <button id="hint" type="button" onClick="showHint()">Need Help?</button>
+    </form>
 
 
   <div class="hint">
