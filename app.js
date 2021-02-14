@@ -24,24 +24,24 @@ var playerName;
 
 
 function start() {
-  playerName = document.getElementsByName("playerName")[0].value;
-  document.querySelector(".fullPage").style.display = "none";
+  playerName = document.getElementsByName("name-prompt")[0].value;
+  document.querySelector(".new-game-page").style.display = "none";
   generateProblem();
   document.getElementById("answer").select();
 }
 
 
 function generateProblem() {
-  op = operations[Math.floor(Math.random()*operations.length)]; //grabs plus or minus
+  op = operations[Math.floor(Math.random()*operations.length)];
   nums = [x, y];
-  nums.sort(function(a, b){return a - b}); //sorts the numbers so I can get the bigger one first
-  document.getElementById("equation").innerHTML = `${nums[1]} ${op.string} ${nums[0]} =`;//print the equation
+  nums.sort(function(a, b){return a - b});
+  document.getElementById("equation").innerHTML = `${nums[1]} ${op.string} ${nums[0]} =`;
 }
 
 var distance = 0;
 
-function calculate() { //when Enter is clicked
-  var answer = document.getElementsByName("answer")[0].value; //gets the submitted answer
+function calculate() {
+  var answer = document.getElementsByName("answer")[0].value;
   var correctAns;
   if (op == plus) {
     correctAns = sum(x, y)
@@ -63,7 +63,8 @@ function calculate() { //when Enter is clicked
   document.getElementById("rocket").style.left=`${distance}%`
 
   if (distance == 90) {
-    var message = document.getElementById("name");
+    var message = document.getElementById("victory-message");
+
     message.innerHTML = "Congratulations " + playerName + ". " + message.innerHTML;
   document.getElementById("success").style.display="block";
 }
@@ -84,10 +85,6 @@ function nextRound() {
 }
 
 function showHint() {
-  /*Displays the "Hints" section
-  Hides the Hint button
-  and grabs the right images from the hints array
-  And displays them with the bigger number (nums[1]) first*/
   document.getElementById("answer").select();
   document.querySelector(".hint").style.display = "block";
   document.getElementById("hint").style.display = "none";
@@ -100,11 +97,11 @@ function newGame() {
   playerName = "";
   distance = 0;
 document.getElementById("rocket").style.left=`${distance}px`
-  document.getElementById("startPage").style.display = "block";
+  document.querySelector(".new-game-page").style.display = "block";
   document.getElementById("success").style.display = "none";
-  document.getElementById('playerName').value = ''
-  document.getElementById("playerName").select();
-  document.getElementById("name").innerHTML = "You Win! :D"
+  document.getElementById('name-prompt').value = ''
+  document.getElementById("name-prompt").select();
+  document.getElementById("victory-message").innerHTML = "You Win! :D"
   nextRound();
 
 }

@@ -4,7 +4,7 @@
 #op {
   margin-bottom: 50px;
 }
-#success {
+#victory {
   display: none;
 }
 
@@ -23,7 +23,7 @@ body {
  }
 
 /*start screen*/
-.fullPage {
+.new-game-page {
   background-image: url("images/galaxy.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -35,13 +35,13 @@ body {
   text-align: center;
 }
 
-.fullPage p {
+.new-game-page p {
   display: inline-block;
   margin: 0;
   background-color: rgba(54, 209, 217, .6);
   border-radius: 10%;
 }
- #start {
+ #new-game {
    font-size: 50px;
    border-radius: 30%;
  }

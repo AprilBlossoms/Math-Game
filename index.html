@@ -11,18 +11,20 @@
 </head>
 
 <body>
-  <div id="startPage" class="fullPage">
-    <div class="start-button">
-      <p>What is your name?</p><br>
-      <input type="text" id="playerName" name="playerName" autofocus><br>
-      <button id="start" type="button" onclick="start()">Start</button>
-      </div>
+  <div class="new-game-page">
+    <form class="start-game" onsubmit="start(); return false">
+      <p class="new-game-text">What is your name?</p><br>
+      <input type="text" id="name-prompt" name="name-prompt" autofocus><br>
+     <input type ="submit" name ="player-name" value="Start">
+     </form>
+
+     <div id="victory">
+       <p id="victory-message">You Win! :D</p><br>
+       <button id="newGame" type="button" onClick="newGame()">New Game</button>
+     </div>
     </div>
 
-    <div id="success" class="fullPage">
-      <p id="name">You Win! :D</p><br>
-      <button id="newGame" type="button" onClick="newGame()">New Game</button>
-    </div>
+
 
     <div class="progress">
       <div id ="rocketContainer">
