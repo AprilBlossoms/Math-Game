@@ -66,7 +66,8 @@ function calculate() {
     var message = document.getElementById("victory-message");
 
     message.innerHTML = "Congratulations " + playerName + ". " + message.innerHTML;
-  document.getElementById("success").style.display="block";
+  document.getElementById("victory").style.display="block";
+  document.querySelector(".start-game").style.display="none"
 }
   document.getElementById('answer').value = '';
 
@@ -97,8 +98,8 @@ function newGame() {
   playerName = "";
   distance = 0;
 document.getElementById("rocket").style.left=`${distance}px`
-  document.querySelector(".new-game-page").style.display = "block";
-  document.getElementById("success").style.display = "none";
+  document.getElementById("victory").style.display = "none";
+  document.querySelector(".start-game").style.display = "block";
   document.getElementById('name-prompt').value = ''
   document.getElementById("name-prompt").select();
   document.getElementById("victory-message").innerHTML = "You Win! :D"
