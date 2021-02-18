@@ -12,16 +12,16 @@
 
 <body>
   <div class="new-game-page">
-    <form class="start-game" onsubmit="start(); return false">
+    <form class="new-game-elem" id="start-game" onsubmit="start(); return false">
       <p class="new-game-text">What is your name?</p><br>
       <input type="text" id="name-prompt" name="name-prompt" autofocus><br>
      <input type ="submit" name ="player-name" value="Start">
      </form>
 
-     <div id="victory">
+     <form class="new-game-elem" id="victory" onsubmit="newGame(); return false">
        <p id="victory-message">You Win! :D</p><br>
-       <button id="newGame" type="button" onClick="newGame()">New Game</button>
-     </div>
+       <input type ="submit" id="new-game" name ="new-game" value="New Game">
+     </form>
     </div>
 
 
