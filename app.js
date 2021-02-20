@@ -69,7 +69,8 @@ function calculate() {
     document.querySelector(".new-game-page").style.display="block"
 
   document.getElementById("victory").style.display="inline-block";
-  document.getElementById("start-game").style.display="none"
+  document.getElementById("start-game").style.display="none";
+    document.getElementById("new-game").focus();
 }
   document.getElementById('answer').value = '';
 

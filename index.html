@@ -12,7 +12,7 @@
 
 <body>
   <div class="new-game-page">
-    <form class="new-game-elem" id="start-game" onsubmit="start(); return false">
+    <form class="new-game-elem" id="start-game" onsubmit="start(); return false" autocomplete="off">
       <p class="new-game-text">What is your name?</p><br>
       <input type="text" id="name-prompt" name="name-prompt" autofocus><br>
      <input type ="submit" name ="player-name" value="Start">
@@ -37,7 +37,7 @@
     </div>
 
   <div class="game">
-    <form class="answerForm" onsubmit="calculate();return false">
+    <form class="answerForm" onsubmit="calculate();return false" autocomplete="off">
       <p class="equation" id="equation"></p>
       <input type="text" id="answer" name="answer"><br>
       <input type="submit" name="enter" id="enter" value="Enter">
